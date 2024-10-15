@@ -1,0 +1,43 @@
+const Router = require('express');
+const router = new Router();
+const sortController = require('../controller/sort.controller');
+
+
+router.get('/GetAllObjects000', sortController.getAllObjects);
+router.get('/GetAllObjects001', sortController.getAllObjectsAsc);
+router.get('/GetAllObjects002', sortController.getAllObjectsDesc);
+router.get('/GetAllObjects200', sortController.getObjectsWithState2);
+router.get('/GetAllObjects201', sortController.getObjectsWithState2Asc);
+router.get('/GetAllObjects202', sortController.getObjectsWithState2Desc);
+router.get('/GetAllObjects300', sortController.getObjectsWithState3);
+router.get('/GetAllObjects301', sortController.getObjectsWithState3Asc);
+router.get('/GetAllObjects302', sortController.getObjectsWithState3Desc);
+router.get('/GetAllObjects020', sortController.getObjectsWithType2);
+router.get('/GetAllObjects021', sortController.getObjectsWithType2Asc);
+router.get('/GetAllObjects022', sortController.getObjectsWithType2Desc);
+router.get('/GetAllObjects030', sortController.getObjectsWithType3);
+router.get('/GetAllObjects031', sortController.getObjectsWithType3Asc);
+router.get('/GetAllObjects032', sortController.getObjectsWithType3Desc);
+router.get('/GetAllObjects040', sortController.getObjectsWithType4);
+router.get('/GetAllObjects041', sortController.getObjectsWithType4Asc);
+router.get('/GetAllObjects042', sortController.getObjectsWithType4Desc);
+router.get('/GetAllObjects220', sortController.getObjectsWithState2AndType2);
+router.get('/GetAllObjects221', sortController.getObjectsWithState2AndType2Asc);
+router.get('/GetAllObjects222', sortController.getObjectsWithState2AndType2Desc);
+router.get('/GetAllObjects230', sortController.getObjectsWithState2AndType3);
+router.get('/GetAllObjects231', sortController.getObjectsWithState2AndType3Asc);
+router.get('/GetAllObjects232', sortController.getObjectsWithState2AndType3Desc);
+router.get('/GetAllObjects240', sortController.getObjectsWithState2AndType4);
+router.get('/GetAllObjects241', sortController.getObjectsWithState2AndType4Asc);
+router.get('/GetAllObjects242', sortController.getObjectsWithState2AndType4Desc);
+router.get('/GetAllObjects320', sortController.getObjectsWithState3AndType2);
+router.get('/GetAllObjects321', sortController.getObjectsWithState3AndType2Asc);
+router.get('/GetAllObjects322', sortController.getObjectsWithState3AndType2Desc);
+router.get('/GetAllObjects330', sortController.getObjectsWithState3AndType3);
+router.get('/GetAllObjects331', sortController.getObjectsWithState3AndType3Asc);
+router.get('/GetAllObjects332', sortController.getObjectsWithState3AndType3Desc);
+router.get('/GetAllObjects340', sortController.getObjectsWithState3AndType4);
+router.get('/GetAllObjects341', sortController.getObjectsWithState3AndType4Asc);
+router.get('/GetAllObjects342', sortController.getObjectsWithState3AndType4Desc);
+
+module.exports = router;

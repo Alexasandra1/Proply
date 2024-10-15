@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "oxyennozaebic",
+    "database": "ProplyDb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "oxyennozaebic",
+    "database": "ProplyDb_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "oxyennozaebic",
+    "database": "ProplyDb_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
